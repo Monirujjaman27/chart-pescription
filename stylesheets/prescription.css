@@ -1,0 +1,178 @@
+/*
+ * Title: Project style sheet
+ * Description: This is the main project style sheet of this project
+ * Author: Sumit Saha ( Learn with Sumit )
+ * Date: 23/05/2021
+ *
+ */
+
+/* css custom properties */
+:root {
+    --primary: #171c2a;
+    --secondary: #11141f;
+    --tertiary: #1f222e;
+    --dark: #0e0e12;
+    --green: #52d794;
+    --blue: #00b3bd;
+    --light: #fff;
+    --red: indianred;
+}
+
+/* common global styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, var(--green) 0%, var(--blue) 100%);
+    font-size: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+/* 
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 20px;
+} */
+
+body {
+    display: grid;
+}
+
+
+.w-100 {
+    width: 100%;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.w-25 {
+    width: 25%;
+}
+
+.w-20 {
+    width: 25%;
+}
+
+#patient_general--info,
+#prescription_mainsection,
+#heder-area {
+    display: flex;
+    padding: 10px;
+}
+
+/*============== container  ==================== */
+.container {
+    margin: 50px;
+    border-radius: 5px;
+    border: 1px solid #a7a4a4;
+}
+
+/*============== heder-area start  ==================== */
+#heder-area {
+    background: darkgrey;
+}
+
+.heder_area--rightside {
+    text-align: right;
+}
+
+/* =======patient_general-info======= */
+#patient_general--info {
+    padding: 5px;
+    background: #d1d1d1;
+}
+
+@media print {
+    #patient_general--info {
+        padding: 5px;
+        background: red;
+    }
+}
+
+.patient_general--infoLeft {
+    text-align: left;
+}
+
+.patient_general--inforight {
+    text-align: right;
+}
+
+/* ========== prescription_mainsection ================ */
+#prescription_mainsection {
+    background: #fff;
+}
+
+.prescription_mainsection--left {
+    border-right: 1px solid #898989;
+    padding-right: 5px;
+}
+
+.pt_cc {
+    /* background: #7e7e7e; */
+    /* padding-left: 5px; */
+    text-align: left;
+    border-bottom: 1px solid;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.list_item {
+    margin-top: 3px;
+    padding-left: 2px;
+}
+
+/*========= prescription_mainsection--right =========*/
+.prescription_mainsection--right {
+    padding: 10px;
+}
+
+.prescription_mainsection--right ul {
+    margin-left: 10px;
+    list-style: decimal;
+}
+
+.prescription_mainsection--right ul li {
+    padding: 3px;
+}
+
+.rx {
+    font-size: 25px;
+}
